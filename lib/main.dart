@@ -124,7 +124,8 @@ class _QRViewExampleState extends State<QRViewExample> {
             builder: (_) => AlertDialog(
               title: const Text('VirusTotal Result'),
               content: Text(
-                  'Scan Result: URL/Website is dangerous. Don\'t open it to protect yourself!'),
+                'Scan Result: URL/Website is dangerous. Don\'t open it to protect yourself!\n\n malicious: $malicious, \n suspicious: $suspicious',
+              ),
               actions: <Widget>[
                 TextButton(
                   child: const Text('OK'),
